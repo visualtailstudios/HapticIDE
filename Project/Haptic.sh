@@ -1,3 +1,6 @@
+
+# macOS App
+
 mkdir -p Haptic.app/Contents/MacOS
 mkdir -p Haptic.app/Contents/Resources
 
@@ -10,3 +13,7 @@ osascript -e "tell application \"Terminal\" to do script \"mono '$APP_DIR/Haptic
 EOF
 
 chmod +x Haptic.app/Contents/MacOS/Haptic
+
+# Windows / Linux App
+
+mcs Haptic.cs
